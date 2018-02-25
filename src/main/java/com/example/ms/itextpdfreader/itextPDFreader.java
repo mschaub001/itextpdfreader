@@ -22,7 +22,6 @@ public class itextPDFreader {
     public static void main(String[] args) {
         // TODO code application logic here
         try {
-
             PdfReader reader = new PdfReader("c:/temp/O_Lehrpersonen.pdf");
             System.out.println("This PDF has " + reader.getNumberOfPages() + " pages.");
             String page = PdfTextExtractor.getTextFromPage(reader, 2);
